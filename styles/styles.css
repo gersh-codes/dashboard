@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F1D2B;
+    color: #E0E0E0;
+    display: flex;
+  }
+  
+  #sidebar {
+    width: 250px;
+    background-color: #252836;
+    padding: 20px;
+    color: white;
+  }
+  
+  #main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #A6A6A6;
+  }
+  
+  #wallet {
+    background-color: #2C2F3A;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+  }
+  
+  #wallet h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #A6A6A6;
+  }
+  
+  #wallet-balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #wallet-balance p {
+    font-size: 1.2em;
+    color: #FFFFFF;
+  }
+  
+  #withdraw-button {
+    background-color: #1DBF73;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #transaction-history h4 {
+    margin-bottom: 10px;
+  }
+  
+  #transaction-history ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #transaction-history li {
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+    color: #BBBBBB;
+  }
+  
