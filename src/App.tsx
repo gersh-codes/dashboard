@@ -30,20 +30,17 @@ const App: React.FC = () => {
       case "settings":
         return <Settings />;
       default:
-      
+        return <DermatologistDashboard userName={""} />;
     }
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
       <Toaster position="top-right" />
-      {/* Pass the currentPage and setCurrentPage as props to Navbar and Sidebar */}
-      <Navbar currentPage={setCurrentPage} currentPage={currentPage} setCurrentPage={function (value: React.SetStateAction<string>): void {
-        throw new Error("Function not implemented.");
-      } } />
+      {/* Pass the currentPage and setCurrentPage as props to Navbar */}
+      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <main className="flex pt-16">
         <Sidebar setCurrentPage={setCurrentPage} />
-         {/* Display or render content based on `currentPage` */}
         <div className="flex-1 p-6">{renderPage()}</div>
       </main>
       <Footer />
@@ -52,6 +49,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
 
 
 
